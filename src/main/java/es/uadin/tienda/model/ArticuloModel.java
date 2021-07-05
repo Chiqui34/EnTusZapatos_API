@@ -23,17 +23,17 @@ public class ArticuloModel {
     @Column(name = "activo")
     private boolean activo;
 
-    @Column(name = "categoria")
-    private String categoria;
+    @Column(name = "idcategoria")
+    private Long idCategoria;
 
     public ArticuloModel() {
     }
 
-    public ArticuloModel(Long id, String nombre, byte[] imagen, boolean activo, String categoria) {
+    public ArticuloModel(Long id, String nombre, byte[] imagen, boolean activo, Long idCategoria) {
         this.id = id;
         this.nombre = nombre;
         this.imagen = imagen;
         this.activo = activo;
-        this.categoria = categoria;
+        this.idCategoria = idCategoria;
     }
 }

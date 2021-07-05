@@ -1,12 +1,9 @@
 package es.uadin.tienda.service.impl;
 
 import es.uadin.tienda.model.CategoriaModel;
-import es.uadin.tienda.model.DiapositivaModel;
 import es.uadin.tienda.repository.CategoriaRepository;
-import es.uadin.tienda.repository.DiapositivaRepository;
 import es.uadin.tienda.service.ICategoriasService;
 import es.uadin.tienda.service.dto.CategoriaDTO;
-import es.uadin.tienda.service.dto.DiapositivaDTO;
 import es.uadin.tienda.service.mapper.ModelMapperUtils;
 import org.springframework.stereotype.Service;
 
@@ -53,8 +50,5 @@ public class CategoriaService implements ICategoriasService {
     public void eliminarCategoria(Long id) {
         this.categoriaRepository.deleteById(id);
     }
-
-
-
 
 }
